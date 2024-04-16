@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lobster", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: rgba(18, 96, 112, 0.7098039216);
+  min-height: 100vh;
+}
+
+.cell {
+  background-image: url(/img/icons8-question-mark-96.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.game-field {
+  background-color: #444;
+  border: 2px solid black;
+  width: 30em;
+  height: 30em;
+  border-radius: 10px;
+}
+
+.game-over {
+  background-color: rgba(165, 42, 42, 0.8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  font-size: 3em;
+}
+.game-over-text {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+td {
+  border: 1px solid red;
+  cursor: pointer;
+}
+
+.crest {
+  background-color: bisque;
+}
+
+.null {
+  background-color: rgb(59, 136, 204);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 30em;
+  margin-top: 30px;
+}
+
+.button {
+  background-color: rgb(36, 36, 3);
+  color: aliceblue;
+  font-size: 2em;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: transform 0.3s ease;
+}
+.button:hover {
+  transform: scale(1.1);
+}
+
+.game-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30em;
+  margin-bottom: 16px;
+}
+
+.player-one,
+.player-two,
+.draw {
+  flex-shrink: 0;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+}
+
+.player-one {
+  background-color: #0fa;
+}
+.player-one-shadow {
+  box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa;
+}
+
+.player-two {
+  background-color: #ff0000;
+}
+.player-two-shadow {
+  box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px rgb(185, 87, 62), 0 0 82px rgb(255, 47, 0);
+}
+
+.draw {
+  background-color: #ffff00;
+}
+.draw-shadow {
+  box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px rgb(200, 185, 52), 0 0 82px rgb(216, 173, 18);
+}
+
+.count-one,
+.count-two {
+  width: 50%;
+  background: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: 1.5em;
+  margin: 0.5em;
+}
+
+.count-two {
+  text-align: right;
+}
+
+/*# sourceMappingURL=style.css.map */

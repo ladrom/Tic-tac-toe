@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-tac-toe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="game-status">
+    <div class="player-one"></div>
+    <input readonly value="0" type="text" class="count-one">
+    <div class="draw"></div>
+    <input readonly value="0" type="text" class="count-two">
+    <div class="player-two"></div>
+  </div>
+  <div class="wrapper">
+    <div hidden class="game-over">
+      <p class="game-over-text">Le jeu est terminé. Commencez-en un nouveau!</p>
+    </div>
+    <table class="game-field">
+      <tbody>
+        <tr class="row-one">
+          <td data-status="empty" class="cell cell-one"></td>
+          <td data-status="empty" class="cell cell-two"></td>
+          <td data-status="empty" class="cell cell-three"></td>
+        </tr>
+    
+        <tr class="row-two">
+          <td data-status="empty" class="cell cell-one"></td>
+          <td data-status="empty" class="cell cell-two"></td>
+          <td data-status="empty" class="cell cell-three"></td>
+        </tr>
+    
+        <tr class="row-three">
+          <td data-status="empty" class="cell cell-one"></td>
+          <td data-status="empty" class="cell cell-two"></td>
+          <td data-status="empty" class="cell cell-three"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="buttons">
+    <button class="button button-new">Nouveau jeu</button>
+    <button class="button button-null">Réinitialiser</button>
+  </div>
+
+</body>
+<script defer src="app.js"></script>
+</html>

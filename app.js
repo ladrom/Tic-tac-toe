@@ -12,9 +12,9 @@ const redLight = document.querySelector('.player-two');
 const inputGreen = document.querySelector('.count-one');
 const inputRed = document.querySelector('.count-two');
 const char = ['crest', 'null'];
-const pictureQuestion = 'url(/img/icons8-question-mark-96.png)';
-const pictureCrest = 'url(/img/icons8-multiply-96.png)';
-const pictureNull = 'url(/img/icons8-zero-64.png)';
+const pictureQuestion = 'url(img/icons8-question-mark-96.png)';
+const pictureCrest = 'url(img/icons8-multiply-96.png)';
+const pictureNull = 'url(img/icons8-zero-64.png)';
 let counter = 0;
 let field = [
   [NaN, NaN, NaN],
